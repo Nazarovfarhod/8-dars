@@ -1,0 +1,106 @@
+@import "./style.css";
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  color: #fff;
+}
+
+.centr {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer {
+  position: relative;
+  margin-left: 5rem;
+  background-color: #111;
+}
+.button {
+  height: 7rem;
+  width: 22rem;
+  border-radius: 5rem;
+}
+.circle {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+
+.outer button,
+.outer span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.outer button {
+  background-color: #111;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  z-index: 9;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:active {
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    color: #111;
+    z-index: 0;
+    font-weight: 700;
+  }
+}
+
+.button button {
+  height: 6rem;
+  width: 21rem;
+  border-radius: 5rem;
+}
+.circle button {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+}
+
+.outer span {
+  height: 100%;
+  width: 100%;
+  background: ;
+}
+
+.button span {
+  border-radius: 5rem;
+}
+.circle span {
+  border-radius: 50%;
+}
+
+.outer:hover span:nth-child(1) {
+  filter: blur(0.7rem);
+}
+.outer:hover span:nth-child() {
+  filter: blur(1.4rem);
+}
+
+.outer:hover {
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

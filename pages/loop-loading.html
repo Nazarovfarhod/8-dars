@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/loop-loading.css">
+    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header class="header"></header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main class="main">
+
+
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="outer"></div>
+        <div class="numb">
+           0%
+        </div>
+        <div class="circle">
+           <div class="dot">
+              <span></span>
+           </div>
+           <div class="bar left">
+              <div class="progress"></div>
+           </div>
+           <div class="bar right">
+              <div class="progress"></div>
+           </div>
+        </div>
+     </div>
+     <script>
+        const numb = document.querySelector(".numb");
+        let counter = 0;
+        setInterval(()=>{
+          if(counter == 100){
+            clearInterval();
+          }else{
+            counter+=1;
+            numb.textContent = counter + "%";
+          }
+        }, 80);
+     </script>
+
+    
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer"></footer>
+    <!-- FOOTER END -->
+  </body>
+</html>

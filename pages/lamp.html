@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bulb.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
     <link
       rel="stylesheet"
@@ -19,9 +20,16 @@
 
     <!-- MAIN START -->
     <main class="main">
-      
+      <div class="wrapper">
+        <input type="checkbox" id="btn">
+        <img id="bulb-off" src="../images/bulb-off.png">
+        <img id="bulb-on" src="../images/bulb-on.png">
+        <label for="btn" class="btn">
+          <span></span>
+        </label>
+      </div>
 
-      <a href="./pages/loading.html">
+      <a href="../pages/loop-loading.html">
         <div class="slide">
           <i class="fa-solid fa-angle-down"></i>
         </div>
